@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Vashisths Tree</title>
+        
+<style>
+p{
+border:groove;
+background-color:cadetblue;
+border:pink ;
+}
+
+</style>
+    </head>
+<body>
+    <div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v9.0" nonce="0L4lzlJI"></script>
+
+    <script>
+        var members = ["Arnav Vashisth" , "Shashi Pathak","Rohit Vashisth","Kanchan Bhardwaj Vashisth","Akshita Bhardwaj","Sumati Datta", "Suvid Datta" , "Samir Datta" , "Baldev Raj Bhardwaj" , "Suneet Pathak" , "Akshaj Bhardwaj" , "Ryan Gupta" , "Chetan Bhardwaj" , "Tripta Devi Bhardwaj" , "Somaya Datta" ];
+        var Profession = ["Me"," Paternal GrandMother" , "Father" , "Mom" , "Cousin" , "Cousin" , "Cousin" , "Uncle" , "GrandFather" , "GrandFather" , "Cousin" , "Cousin" , "Aunt" , "Maternal Grandmother" , "Uncle"]
+        var images = ["htphoto.gif" , "https://www.clipartmax.com/png/middle/15-152653_grandmother-clip-art-animated-picture-of-grandmother.png","https://t.pimg.jp/047/933/830/5/47933830.jpg","data:image/jpeg;base64,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","https://st4.depositphotos.com/7843760/22126/v/1600/depositphotos_221262566-stock-illustration-girl-funny-playing-cute-brown.jpg","https://cdn5.f-cdn.com/contestentries/1458359/21383270/5c0fd813d2ef6_thumb900.jpg","https://media.istockphoto.com/vectors/little-kid-soccer-boy-vector-id469506620?k=6&m=469506620&s=612x612&w=0&h=NFuxsnyBOGJmvTzGUQ87e9ascqS1WVUWpQ29-3Cp1eQ=" , "https://image.shutterstock.com/image-vector/vector-illustration-cartoon-professor-260nw-133432184.jpg" , "https://cdn.imgbin.com/0/13/15/imgbin-grandparent-grandfather-grandpa-grandpa-art-background-man-wearing-vest-and-dress-shirt-H2brpK9cxN4NRenzWkt0JRnAu.jpg" , "https://cdn.imgbin.com/0/13/15/imgbin-grandparent-grandfather-grandpa-grandpa-art-background-man-wearing-vest-and-dress-shirt-H2brpK9cxN4NRenzWkt0JRnAu.jpg" , "https://cdn.iconscout.com/icon/premium/png-512-thumb/animated-boy-3-868077.png" , "https://thumbs.dreamstime.com/b/vector-illustration-boy-sporty-uniform-who-holds-basketball-boy-sporty-uniform-147238085.jpg" , "https://www.clipartmax.com/png/middle/243-2439854_mother-cartoon-clip-art-animated-mom-png.png" ,  "https://www.clipartmax.com/png/middle/243-2439854_mother-cartoon-clip-art-animated-mom-png.png" , "https://www.clipartmax.com/png/middle/243-2439854_mother-cartoon-clip-art-animated-mom-png.png" ];
+        var i= 0;
+        function nextslide() {
+        document.getElementById("me") .innerHTML = members [i];
+        document.getElementById("album").src = images[i];
+        document.getElementById("prof") .innerHTML = Profession [i];
+   i++;
+} 
+
+</script>
+<center>
+    <h1>My FAMILY Profile</h1>
+    <img src="ICON NEW.png" id="album" style="width: 300px; size: 300px;">
+    <br> <br> <br> <br>
+   <p id="me" style="font-size: 20px;">The Family Tree</p>
+   <p id="prof" style="font-size: 20px;">Profession</p>
+    <br> <br>
+    <button type="button" style="background-color:green; font-size: 15px;;" onclick="nextslide()">NEXT</button> 
+
+
+    <br> <br>
+     
+
+    <div class="fb-share-button" data-href="https://arnavvashisthcodingaccountnew.github.io/The-Family-Tree/" data-layout="button" data-size="small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Farnavvashisthcodingaccountnew.github.io%2FThe-Family-Tree%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
+    <br><br><br><br><br><br><br><br><br><br><br><br>
+
+    Social 
+
+    Email - vashisthsf@gmail.com
+<BR>
+
+    @2020 By arnavvashisth
+<br> 
+    Special Thanks to Whitehatjr
+
+
+    
+
+</center>
+</body>
+
+
+
+</html>
